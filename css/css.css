@@ -1,0 +1,269 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+:root{
+    --hvid: #ffffff;
+    --lys: #f7e3cc;
+    --lysbeige: #fad6ad;
+    --beige: #f5b060;
+    --orange: #f18931;
+    --rød: #743006;
+    --rose: #ae3131;
+    --rosalight: #b54444;
+    --sort: #1e0202;
+}
+
+body {
+    background: var(--hvid);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url("../img/forside.png");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    height: 50rem;
+    width: auto;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+    margin: 3%;
+}
+
+
+/* Menu start */
+  
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    
+    z-index: 1; /* rækkefølge ting tages i */
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: var(--sort);
+    
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover
+  {
+    color: var(--rose);
+  }
+  
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* gemmer boks */
+    z-index: 2; /* placere ovenpå hamburger*/
+    
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: var(--sort); /*hamburger farve*/
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  /*hamburger bliver til kryds*/
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--sort);
+  }
+  
+  /*middter pind bliver gemt */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*sidste pind går modsat retning for at lave krydset*/
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*absolut potitoneret top left*/
+  
+  #menu {
+    position: absolute;
+    max-width: 400px;
+    width: 100vw;
+    max-height: 100vh;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: var(--lys);
+    list-style-type: none;
+    
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  #menu li label {
+    cursor: pointer;
+  }
+  
+  /*fade ind fra højre*/
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    opacity: 1;
+  }
+
+/* slut menu*/
+
+#welcome {
+    text-align: center;
+}
+
+#welcome h1{
+    font-size: 100px;
+    font-family: "bebas neue", sans-serif;
+    margin-top: 70px;
+}
+
+#welcome p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.gradientsection{
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background: rgb(246,45,101);
+    background: linear-gradient(90deg, rgba(246,45,101,1) 0%, rgba(246,177,32,1) 25%, rgba(245,238,89,1) 50%, rgba(246,177,32,1) 75%, rgba(246,45,101,1) 100%);
+}
+
+.øl {
+    display: flex;
+    flex-direction: column; /* Lægger billedet og teksten vertikalt */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    margin: 20px; /* Tilføj lidt afstand mellem hver øl */
+    font-family: "bebas neue", sans-serif;
+}
+
+.gradientsection p{
+    font-size: 50px;
+    color: var(--sort); /* Vælg ønsket tekstfarve */
+    padding-top: 1%;
+}
+
+
+
+footer {
+    background: url("../img/footerbillede.png");
+    background-repeat: no-repeat; 
+    background-size: cover; /* Dækker hele containeren */
+    height: 27rem;
+    width: 100%; /* Sørger for, at footer strækker sig over hele skærmens bredde */
+}
+
+#flogo {
+    display: block;
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+
+}
+
+footer .info{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.email a {
+    text-decoration: none; /* Fjerner understregningen */
+    color: var(--sort);
+}
+
+.some {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.some img {
+    width: 12rem;  /* Juster størrelsen af billederne */
+    height: auto; /* Bevarer aspect ratio */
+
+}
+
