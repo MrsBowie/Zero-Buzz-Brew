@@ -1,0 +1,161 @@
+header {
+    background: url("../img/profil.jpg");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    height: 25rem;
+    width: auto;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.gradientsection{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background: rgb(246,45,101);
+    background: linear-gradient(90deg, rgba(246,45,101,0.85) 0%, rgba(246,177,32,0.75) 25%, rgba(245,219,89,0.6) 50%, rgba(246,177,32,0.75) 75%, rgba(246,45,101,0.85) 100%);
+}
+
+/* Hovedcontainer */
+.container {
+    display: flex;
+    max-width: 900px;
+    background: var(--hvid);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--sort);
+}
+
+/* Billede-sektionen */
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Login-sektionen */
+.login-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-button{
+    text-decoration: none;
+    color: var(--hvid);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Inputfelter */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Login-knap */
+button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/*profil efter login*/
+.gradientsection2{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    background: rgb(246,45,101);
+    background: linear-gradient(90deg, rgba(246,45,101,0.85) 0%, rgba(246,177,32,0.75) 25%, rgba(245,219,89,0.6) 50%, rgba(246,177,32,0.75) 75%, rgba(246,45,101,0.85) 100%);
+}
+
+#profall {
+    display: flex;
+    flex-direction: column;
+}
+
+#prof {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center;
+    padding-right: 30%;
+    padding-left: 20%;
+}
+
+.profilbillede img {
+    height: auto;
+    width: 50%; /* Juster bredden som ønsket */
+    border-radius: 20%; /* Gør billede rundt */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hej {
+    text-align: left;
+    width: 300%;
+}
+
+#profinfo {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    gap: 15%;
+}
+
+#pro{
+    display: block;
+    flex-direction: column;
+    margin: 25%;
+}
+
+h3{
+    color: grey;
+}
