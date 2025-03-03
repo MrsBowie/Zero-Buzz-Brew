@@ -1,11 +1,152 @@
 
 header {
-    background: url("../img/shop.jpg");
+    background: url("../img/navbarbilleder/shop.png");
     background-repeat: no-repeat; 
     background-size: 100%;
-    height: 50rem;
+    height: 25rem;
     width: auto;
     
     display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background: rgb(246,45,101);
+    background: linear-gradient(90deg, rgba(246,45,101,0.85) 0%, rgba(246,177,32,0.75) 25%, rgba(245,219,89,0.6) 50%, rgba(246,177,32,0.75) 75%, rgba(246,45,101,0.85) 100%);
+}
+
+.kurv {
+    float: right;
+    background-color: none;
+    cursor: pointer;
+    width: 100px;
+    height: 200px;
+    margin-top: 2%;
+}
+
+
+
+.product {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+    margin: 2%;
+
+}
+
+button {
+    margin: 5%;
+    width: 40%;
+}
+
+.zbbøl {
+    width: 10%;
+    height: auto;
+}
+
+.toøl {
+    width: 15%;
+    height: auto;
+}
+
+.zbbøl:hover {
+    width: 12%;
+    height: auto;
+}
+
+.toøl:hover {
+    width: 17%;
+    height: auto;
+}
+
+h1{
+    font-family: "bebas neue", sans-serif;
+    font-size: 80px;
+}
+
+h2{
+    font-family: "bebas neue", sans-serif;
+    font-size: 45px;
+}
+
+h3{
+    font-family: "bebas neue", sans-serif;
+    font-size: 45px;
+}
+
+h4{
+    font-family: "bebas neue", sans-serif;
+    font-size: 35px;
+}
+
+h5{
+    font-family: "bebas neue", sans-serif;
+    font-size: 25px;
+}
+
+p{
+    font-family: "bebas neue", sans-serif;
+    font-size: 35px; 
+}
+
+button {
+    background-color: #ff4757;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #d63031;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    box-shadow: 0 2px 0 #d63031;
+    transform: translateY(3px);
+}
+
+
+.gaveæsker{
+    text-align: center;
+    color: var(--hvid);
+    background-color: var(--sort);
+    padding: 10%;
+    font-size: 200%;
+    display: block;
+}
+
+.gave{
+    width: 30%;
+    height: auto;
+}
+
+
+/* når du har trykket på køb knapperne*/
+#shop404 {
+    display: none;
+    margin-right: auto;
+    margin-left: auto
+}
+
+#fejlimg {
+    width: 30%;
+    height: auto;
 }
