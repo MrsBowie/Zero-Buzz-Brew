@@ -54,9 +54,9 @@
         <div id="sp1">
             <div class="spør">
                 <h1>Hvad fortrækker du at drikke øl til?</h1>
-                <p>En let frokost eller en sommerdag i skolen</p>
-                <p>En traditionel dansk middag med flæskesteg eller smørrebrød</p>
-                <p>En smagseksplosion med spicy mad eller kraftige oste</p>
+                <button onclick="ga()" class="A">En let frokost eller en sommerdag i skolen</button>
+                <button onclick="ga2()" class="B">En traditionel dansk middag med flæskesteg eller smørrebrød</button>
+                <button onclick="ga3()" class="C">En smagseksplosion med spicy mad eller kraftige oste</button>
             </div>
             <img src="../img/ølfuld/fuldøl.webp" alt="fuldøl" class="spøl">
         </div>
@@ -64,9 +64,9 @@
         <div id="sp2">
             <div class="spør">
                 <h1>Hvordan kan du bedst lide din øl?</h1>
-                <p>Let og frisk</p>
-                <p>Fyldig og rund</p>
-                <p>Bitter og aromatisk</p>
+                <button onclick="gb()" class="A">Let og frisk</button>
+                <button onclick="gb2()" class="B">Fyldig og rund</button>
+                <button onclick="gb3()" class="C">Bitter og aromatisk</button>
             </div>
             <img src="../img/ølfuld/halvøl.webp" alt="halvøl" class="spøl">
         </div>
@@ -74,11 +74,42 @@
         <div id="sp3">
             <div class="spør">
                 <h1>Hvilken beskrivelse passer bedst til din personlighed?</h1>
-                <p>Afslappet og jordnær</p>
-                <p>Klassisk og nostalgisk</p>
-                <p>Eventyrlysten og nysgerrig</p>
+                <button onclick="gc()" class="A">Afslappet og jordnær</button>
+                <button onclick="gc2()" class="B">Klassisk og nostalgisk</button>
+                <button onclick="gc3()" class="C">Eventyrlysten og nysgerrig</button>
             </div>
             <img src="../img/ølfuld/tomøl.webp" alt="tomøl" class="spøl">
+        </div>
+
+        <div id="svar1">
+            <h1>Svar</h1>
+            <p>Du er mest til IPA – en kraftig, bitter og aromatisk øl, som passer til dig, der elsker smagsoplevelser.</p>
+            <img src="../img/nye øl.png" alt="IPA">
+        </div>
+
+        <div id="svar2">
+            <h1>Svar</h1>
+            <p>Du er mest til pilsner – en let og forfriskende øl, perfekt til hygge og afslapning.</p>
+            <img src="../img/nye øl2.png" alt="Pilsner">
+        </div>
+
+        <div id="svar3">
+            <h1>Svar</h1>
+            <p>Du er mest til classic – en fyldigere øl med mere dybde, ideel til traditionelle øjeblikke.</p>
+            <img src="../img/nye øl3.png" alt="Classic">
+        </div>
+
+        <div id="svar4">
+            <h1>Svar</h1>
+            <p>
+                Tillykke!
+                Du elsker al slags øl!
+                Du er ølverdenens schweizerkniv: klar til alt, hvad der bliver skænket op. 
+                Pilsner? Yes, tak! 
+                Classic? Selvfølgelig! 
+                IPA? Hæld op!
+            </p>
+            <img src="../img/3zbbdåser.png" alt="Alleøl" id="svarimg">
         </div>
     </main>
 
@@ -109,5 +140,6 @@
         </div>
     </footer>
     
+    <script src="../java/java.js"></script>
 </body>
 </html>
