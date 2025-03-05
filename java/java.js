@@ -8,7 +8,7 @@ function fejl404() {
        y.style.display = 'none';
     else
        y.style.display = 'block';
-       document.getElementById("shophead").style.backgroundImage = "url('../img/navbarbilleder/fejl404.png')";
+       document.getElementById("shophead").style.backgroundImage = "url('../img/navbarbilleder/fejl404.webp')";
 
     if (y.style.visibility == "none")
         x.style.display = 'block';
@@ -32,12 +32,12 @@ var e = document.getElementById("svar2");
 var f = document.getElementById("svar3");
 var g = document.getElementById("svar4");
 
-// Score-variabler
+// optæller point for spørgsmål, henholdsivs A B og C.
 var scoreA = 0;
 var scoreB = 0;
 var scoreC = 0;
 
-// Skift funktioner
+// Skifter hvad der vises
 function skift() {
     a.style.display = 'none';
     b.style.display = 'block';
@@ -51,7 +51,7 @@ function skift3() {
     end();
 }
 
-// Funktioner til at tilføje point
+//tilføjer point
 function pointA() {
     scoreA += 1;
 }
@@ -62,7 +62,7 @@ function pointC() {
     scoreC += 1;
 }
 
-// Funktioner til knapper
+//knapper/svar for at skifte side og give point på samme tid
 function ga() { skift(); pointA(); }
 function ga2() { skift(); pointB(); }
 function ga3() { skift(); pointC(); }
@@ -80,13 +80,13 @@ function end() {
     let x = 1; // Score skal være over 0 for at vise et svar
 
     if (scoreA > x) {
-        e.style.display = 'block'; // scoreA vinder
+        e.style.display = 'block'; // scoreA vinder (pilsner)
     } else if (scoreB > x) {
-        f.style.display = 'block'; // scoreB vinder
+        f.style.display = 'block'; // scoreB vinder (classic)
     } else if (scoreC > x) {
-        d.style.display = 'block'; // scoreC vinder
+        d.style.display = 'block'; // scoreC vinder (IPA)
     } else {
-        g.style.display = 'block'; // Hvis ingen score er høj nok
+        g.style.display = 'block'; // Hvis ingen score er høj nok (alle tre)
     }
 }
 

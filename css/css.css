@@ -32,7 +32,7 @@ body {
 }
 
 header {
-    background: url("../img/forside.png");
+    background: url("../img/forside.webp");
     background-repeat: no-repeat; 
     background-size: 100%;
     height: 50rem;
@@ -181,17 +181,17 @@ header {
 
 /* slut menu*/
 
-#welcome {
+#welcome, #mød {
     text-align: center;
 }
 
-#welcome h1{
+#welcome h1, #mød h1{
     font-size: 100px;
     font-family: "bebas neue", sans-serif;
     margin-top: 70px;
 }
 
-#welcome p {
+#welcome p, #mød p {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 70px;
@@ -223,7 +223,7 @@ header {
 
 
 footer {
-    background: url("../img/footerbillede.png");
+    background: url("../img/footerbillede.webp");
     background-repeat: no-repeat; 
     background-size: cover; /* Dækker hele containeren */
     height: 27rem;
